@@ -1,11 +1,11 @@
-# Placeholder planning file. 
+# Planning document
+
+Lumping all planning in one document, until there is enough stuff to justify splitting to multiple documents. 
 
 
+### Use cases
 
-
-### Testing PlantUML embedding: Network diagram. 
-
-![Diagram test](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Tulitomaatti/mittari/master/docs/network_diagram.puml)
+![Usecase diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Tulitomaatti/mittari/master/docs/usecases.puml)
 
 
 
