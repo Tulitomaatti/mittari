@@ -1,0 +1,21 @@
+@startuml 
+
+'. Lorem ipsum
+'. Dolor sit amet
+'. Consectetur adipiscing elit. 
+
+
+
+
+Scientist --> pc: configure measurements
+Scientist --> laptop: query measurements
+Admin --> server: setup new nodes
+
+pc --> router
+server --> router
+wifiAP --> router
+laptop --> wifiAP
+SensorNode --> wifiAP
+
+
+@enduml
