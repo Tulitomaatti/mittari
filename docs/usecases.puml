@@ -1,0 +1,38 @@
+@startuml
+
+actor Scientist as 
+actor Admin
+actor "Sensor Node" as node
+actor Server
+
+
+usecase "Configure measurement" as config_measurement
+usecase "Add new sensor node" as add_node
+usecase "Delete sensor node" as del_node
+usecase "Add new expansion module" as add_module
+usecase "Delete expansion module" as del_module
+
+usecase "Attach expansion module to node" as attach_node
+usecase "Detach expansion module from node" as detach_node 
+
+
+package Grafana {
+usecase "Browse measurements" as browse_data
+usecase "Export measurements" as export_data
+}
+
+package MQTT & InfluxDB & Telegraf {
+usecase "Calculate aggregate statistics" as aggregate
+usecase "Store measurement" as store_data 
+usecase "Send measurement"as send_data
+usecase "Get configuration" as get_conf
+}
+
+usecase "Detect connected
+addon modules" as detect_modules
+
+usecase "Check current time 
+& Synchronize" as sync
+
+
+@enduml 
