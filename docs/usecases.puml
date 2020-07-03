@@ -1,38 +1,144 @@
 @startuml
+left to right direction
 
-actor Scientist
-actor Admin
-actor "Sensor Node" as node
-actor Server
+actor User as user <<Scientist>> 
+actor Admin as admin <<HW/SW Developer>> 
+actor "Sensor Node" as snode
+actor Server as server
+
+' Rectangle { 
+usecase config_measurement as "Configure measurement"  
+usecase set_default_config as "Define default config"  
+usecase measure as "Measure" 
+usecase add_node as "Add new 
+                    sensor node"
+usecase del_node as "Delete 
+                    sensor node"  
+usecase add_module as "Register new 
+                    expansion module"
+usecase del_module as "Delete 
+                    expansion module"
+usecase fw_dev as "Develop 
+                    new firmware"  
+
+usecase fw_rollback as "Rollback firmware"  
 
 
-usecase "Configure measurement" as config_measurement
-usecase "Add new sensor node" as add_node
-usecase "Delete sensor node" as del_node
-usecase "Add new expansion module" as add_module
-usecase "Delete expansion module" as del_module
+usecase attach_node as "Attach expansion 
+                    module to node"  
+usecase detach_node as "Detach expansion 
+                    module from node"  
 
-usecase "Attach expansion module to node" as attach_node
-usecase "Detach expansion module from node" as detach_node 
+usecase net_config as "Set WiFi & Server 
+                    credentials"
+usecase connect_wifi as "Connect to WiFi"
 
 
-package Grafana {
-usecase "Browse measurements" as browse_data
-usecase "Export measurements" as export_data
-}
+' Funky syntax hilight bug with base plantuml package? using "" instead of  "" seems to fix it. 
 
-package "MQTT & InfluxDB & Telegraf" {
-usecase "Calculate aggregate statistics" as aggregate
-usecase "Store measurement" as store_data 
-usecase "Send measurement"as send_data
-usecase "Get configuration" as get_conf
-}
+'package Grafana {
+usecase browse_data as "Browse measurements" 
+usecase export_data as "Export measurements"
+'}
+
+'package "MQTT & InfluxDB & Telegraf" {
+usecase aggregate as "Calculate aggregate
+                    statistics" 
+usecase store_data as "Store measurement"  
+usecase send_data as "Send measurement" 
+usecase get_conf as "Get configuration" 
+usecase manage_acl as "Manage Access control 
+                    to MQTT topics"
+
+usecase fw_validate as "Mark new 
+                    firmware valid"
+usecase fw_upload as "Upload 
+                    new firmware"  
+usecase fw_upgrade as "Upgrade firmware"  
+'}
 
 usecase detect_modules as "Detect connected
-addon modules"
+                        addon modules"
 
 usecase sync as "Check current time 
-& Synchronize"
+                        & Synchronize"
+' }
 
 
+admin .> user 
+
+' User actions
+user -- config_measurement
+user -- measure
+user -- attach_node
+user -- detach_node 
+user -- browse_data
+user -- export_data
+
+'Admin actions
+admin -- add_module
+admin -- add_node
+admin -- del_node
+admin -- fw_dev
+admin -- fw_upload
+admin -- fw_validate
+admin -- del_module
+admin -- set_default_config
+admin -- manage_acl
+admin -- net_config
+admin -- fw_upgrade
+
+
+'Node / Module basic functions
+detect_modules -- snode
+get_conf -- snode 
+sync -- snode 
+measure -- snode
+send_data -- snode
+fw_upgrade --- snode
+fw_rollback -- snode
+connect_wifi -- snode
+
+'Server / db / mqtt basic functions 
+aggregate -- server
+store_data -- server
+fw_upload -- server
+fw_upgrade -- server
+sync -- server
+browse_data -- server
+export_data -- server
+manage_acl -- server
+
+
+'Inter-usecase relationships
+net_config <.. connect_wifi  
+
+measure ..> config_measurement
+set_default_config <.. config_measurement : <<extends>>
+
+send_data ..> connect_wifi
+send_data ..> store_data
+attach_node ..> config_measurement : <<extends>>
+detach_node ..> config_measurement : <<extends>>
+
+attach_node -- detect_modules
+detach_node -- detect_modules
+
+add_module ..> fw_dev
+add_module ..> set_default_config 
+add_node ..> set_default_config 
+
+fw_dev <.. fw_upload  
+fw_upload <.. fw_upgrade
+connect_wifi <.. fw_upgrade
+fw_upgrade <.. fw_rollback : <<extends>> 
+fw_validate <.. fw_upgrade
+
+config_measurement <.. get_conf 
+
+export_data .> browse_data : <<extends>>
+
+browse_data ..> store_data
+browse_data <.. aggregate : <<extends>> 
+store_data <.. aggregate
 @enduml 
