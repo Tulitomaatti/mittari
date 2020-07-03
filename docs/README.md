@@ -10,5 +10,5 @@ All .puml diagrams should have a matching .svg rendered.
 
 ### Component diagram
 
-![Component diagram](components.svg)
+![System? component diagram](components.svg)
 

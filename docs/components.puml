@@ -4,7 +4,6 @@ package snode as "Sensor Node" {
     component esp32 as "Microcontroller\nWiFi Module" <<ESP-WROOM-32E>> 
     component ldo as "3.3V LDO\n>500mA"
     component BME280 as "T/P/RH% Sensor" <<BME280>> 
- '   interface "3.3V"
     interface USB as "USB (5V)"
     interface VSPI
     interface HSPI 
@@ -27,11 +26,11 @@ package module as "Addon module" {
 
 package server as "Server" {
     component mqtt_broker as "MQTT Broker"
-    interface mqtt as "MQTT"
+    interface mqtt as "MQTT" <<Mosquitto>> 
 
     component telegraf as "Telegraf\n(data collector)"
-    database db as "InfluxDB"
-    interface influx as "InfluxDB\nLine Protocol"
+    database db as "Database" <<InfluxDB>>
+    interface influx as "DB\nAccess"
 
     component grafana as "Grafana"
     interface HTTPS 
@@ -40,16 +39,11 @@ package server as "Server" {
 component pc as "Admin PC"
 
 
-'server -[hidden]- snode
-'snode -[hidden]- module 
-
 telegraf ..> mqtt 
 telegraf ..> influx 
 grafana ..> influx 
 grafana -left- HTTPS 
-'ldo -- 3.3V
 ldo .d.> USB  
-'esp32 ..> 3.3V
 esp32 ..> mqtt
 esp32 -d- VSPI
 esp32 -- HSPI
@@ -57,7 +51,6 @@ esp32 -- I2C
 esp32 -r- DAC
 esp32 -- GPIO
 BME280 ..> I2C
-'BME280 ..> 3.3V
 mqtt_broker - mqtt 
 db -up- influx
 
@@ -69,9 +62,6 @@ GPIO <.. piso_sr
 GPIO <.. sipo_sr
 sipo_sr --> sipo_sr
 piso_sr --> piso_sr
-'sipo_sr .u.> 3.3V
-'piso_sr -u-> 3.3V
-
 
 
 id_eeprom ..> module_outputs : CS# pin 
@@ -82,19 +72,19 @@ sensor ..> module_outputs
 sensor ..> module_inputs : (optional)
 sensor -d- measurement
 sensor .u.> I2C
-'sensor ..> 3.3V
-'sensor ..> USB : (optional)
 
 pc .up..> mqtt : <for config etc.> 
 
 'Tuning 
-'GPIO -[hidden]-> HSPI
 piso_sr <-[hidden] sensor
-
 DAC <-[hidden] ldo
 BME280 <-[hidden] ldo
 I2C <-[hidden] GPIO
-'esp32 -[hidden]-> BME280
-'BME280 -[hidden]> ldo
+
+GPIO <.right. HSPI
+GPIO <.left. VSPI
+
+' Doesn't seem to play nicely layout-wise: 
+'snode "1" --o "0..*" module
 
 @enduml
