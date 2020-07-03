@@ -1,0 +1,32 @@
+@startuml
+
+component mqtt_client as "MQTT Client"
+interface mqtt as "MQTT"
+
+component fw_task as "Firmware upgrade"
+component module_detector as "Module Detector"
+component measurement_task_supervisor as "Measurement task supervisor"
+
+component hspi as "HSPI Message handler"
+
+
+component i2c as "I2C Message handler"
+component sensor_driver as  "Sensor specific Drivers"
+
+component node_config as "Node specific configuration
+==
+* Node Location: Building/Room/Setup
+* Node ID  
+* Target FW Version 
+" 
+component module_config as "Module specific configuration
+==
+* Sensor Type
+* Sensor ID 
+* Sampling rate...
+* (Sensor/module specific settings) 
+"
+
+component "???"
+
+@enduml

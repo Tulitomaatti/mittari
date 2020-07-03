@@ -8,7 +8,10 @@ All .puml diagrams should have a matching .svg rendered.
 
 ![Usecase diagram](usecases.svg)
 
-### Component diagram
+### System ? Component diagram
 
-![System? component diagram](components.svg)
+![System component diagram](components.svg)
 
+### Microcontroller FW Component diagram
+
+![Microcontroller firmware component diagram](firmware_components.svg)

@@ -23,10 +23,12 @@ package module as "Addon module" {
     interface module_outputs as "I/O: Outputs"
 }
 
+component ext_sensors as "External / Detachable\n sensors"
+
 
 package server as "Server" {
-    component mqtt_broker as "MQTT Broker"
-    interface mqtt as "MQTT" <<Mosquitto>> 
+    component mqtt_broker as "MQTT Broker" <<Mosquitto>> 
+    interface mqtt as "MQTT" 
 
     component telegraf as "Telegraf\n(data collector)"
     database db as "Database" <<InfluxDB>>
@@ -50,7 +52,7 @@ esp32 -- HSPI
 esp32 -- I2C 
 esp32 -r- DAC
 esp32 -- GPIO
-BME280 ..> I2C
+BME280 .r.> I2C
 mqtt_broker - mqtt 
 db -up- influx
 
@@ -72,6 +74,7 @@ sensor ..> module_outputs
 sensor ..> module_inputs : (optional)
 sensor -d- measurement
 sensor .u.> I2C
+ext_sensors -u- measurement
 
 pc .up..> mqtt : <for config etc.> 
 
@@ -81,8 +84,8 @@ DAC <-[hidden] ldo
 BME280 <-[hidden] ldo
 I2C <-[hidden] GPIO
 
-GPIO <.right. HSPI
-GPIO <.left. VSPI
+'GPIO <.right. HSPI
+'GPIO <.left. VSPI
 
 ' Doesn't seem to play nicely layout-wise: 
 'snode "1" --o "0..*" module

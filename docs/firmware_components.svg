@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="363px" preserveAspectRatio="none" style="width:1004px;height:363px;" version="1.1" viewBox="0 0 1004 363" width="1004px" zoomAndPan="magnify"><defs><filter height="300%" id="fz9y3kw60z1tb" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[3a2baec630d66fc6339837be9e4c2392]
+entity mqtt_client--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="128" x="106.5" y="7"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="214.5" y="12"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="212.5" y="14"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="212.5" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="88" x="121.5" y="39.9951">MQTT Client</text><!--MD5=[e6d32054fcb97c68952b5c4281bf48c7]
+entity mqtt--><ellipse cx="297.5" cy="30" fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="277" y="59.9951">MQTT</text><!--MD5=[ad59edfb8fd31018c501b2bcb7a8d564]
+entity fw_task--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="169" x="361" y="7"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="510" y="12"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="508" y="14"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="508" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="129" x="376" y="39.9951">Firmware upgrade</text><!--MD5=[0b7850fa9ba370bb266fc17e924d7f7b]
+entity module_detector--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="161" x="565" y="7"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="706" y="12"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="704" y="14"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="704" y="18"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="121" x="580" y="39.9951">Module Detector</text><!--MD5=[1421b49c6931c7e56495500dbcb832b9]
+entity measurement_task_supervisor--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="251" x="45" y="119"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="276" y="124"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="274" y="126"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="274" y="130"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="211" x="60" y="151.9951">Measurement task supervisor</text><!--MD5=[41a9e1bf123f8b9743d76578b4913a66]
+entity hspi--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="195" x="331" y="119"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="506" y="124"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="504" y="126"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="504" y="130"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="155" x="346" y="151.9951">HSPI Message handler</text><!--MD5=[ae657c83e9983dcf9d5f7d387c5f8988]
+entity i2c--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="185" x="561" y="119"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="726" y="124"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="724" y="126"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="724" y="130"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="145" x="576" y="151.9951">I2C Message handler</text><!--MD5=[d7f3e9bb3dfbc0454478dca41479fd38]
+entity sensor_driver--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="204" x="781.5" y="119"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="965.5" y="124"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="963.5" y="126"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="963.5" y="130"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="164" x="796.5" y="151.9951">Sensor specific Drivers</text><!--MD5=[120fae0ac958b605e3821933ff44189b]
+entity node_config--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="103.1875" style="stroke: #A80036; stroke-width: 1.5;" width="327" x="7" y="233"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="314" y="238"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="312" y="240"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="312" y="244"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="197" x="22" y="265.9951">Node specific configuration</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="8" x2="333" y1="269.2969" y2="269.2969"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="8" x2="333" y1="271.2969" y2="271.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="275" x="28" y="286.292">* Node Location: Building/Room/Setup</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="28" y="302.5889">* Node ID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="143" x="28" y="318.8857">* Target FW Version</text><!--MD5=[74af99fbf39cd4eaf70fe3b27c2b714e]
+entity module_config--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="119.4844" style="stroke: #A80036; stroke-width: 1.5;" width="303" x="369" y="225"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="652" y="230"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="650" y="232"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="650" y="236"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="211" x="384" y="257.9951">Module specific configuration</text><line style="stroke: #A80036; stroke-width: 1.0;" x1="370" x2="671" y1="261.2969" y2="261.2969"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="370" x2="671" y1="263.2969" y2="263.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="100" x="390" y="278.292">* Sensor Type</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="79" x="390" y="294.5889">* Sensor ID</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="127" x="390" y="310.8857">* Sampling rate...</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="251" x="390" y="327.1826">* (Sensor/module specific settings)</text><!--MD5=[44212c2cda1714911dbd930a9575f50f]
+entity ???--><rect fill="#FEFECE" filter="url(#fz9y3kw60z1tb)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="61" x="707" y="261.5"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="748" y="266.5"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="746" y="268.5"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="746" y="272.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="21" x="722" y="294.4951">???</text><!--MD5=[4e1d7d5390c18a0d633e4a122a0ec361]
+link mqtt_client to mqtt--><!--MD5=[44f645542ea286aae1fbeffb39ecaed1]
+link mqtt to fw_task--><!--MD5=[9cf116e1b5181ac1be352144d49f4d41]
+link fw_task to module_detector--><!--MD5=[cc5ee375829de3f823d464dd5d14e015]
+link mqtt_client to measurement_task_supervisor--><!--MD5=[ceedec41376e1eb858f86a0214577e35]
+link measurement_task_supervisor to hspi--><!--MD5=[2a2cd685cddc325f0d93cf7b4aad4081]
+link hspi to i2c--><!--MD5=[1ae7b024b40b848d9cab232a3e3e63d2]
+link i2c to sensor_driver--><!--MD5=[c8b6c4ca5a460dbfa6294a7b3280315f]
+link measurement_task_supervisor to node_config--><!--MD5=[6569b5ff92e137e3e7cc5abe57843654]
+link node_config to module_config--><!--MD5=[323a3c1b32db8b7e173df4f6706a7884]
+link module_config to ???--><!--MD5=[957535efcf7b1343f8f8d6fb559db317]
+@startuml
+component mqtt_client as "MQTT Client"
+interface mqtt as "MQTT"
+
+component fw_task as "Firmware upgrade"
+component module_detector as "Module Detector"
+component measurement_task_supervisor as "Measurement task supervisor"
+
+component hspi as "HSPI Message handler"
+
+
+component i2c as "I2C Message handler"
+component sensor_driver as  "Sensor specific Drivers"
+
+component node_config as "Node specific configuration
+==
+* Node Location: Building/Room/Setup
+* Node ID  
+* Target FW Version 
+" 
+component module_config as "Module specific configuration
+==
+* Sensor Type
+* Sensor ID 
+* Sampling rate...
+* (Sensor/module specific settings) 
+"
+
+component "???"
+@enduml
+
+PlantUML version 1.2020.16beta3(Unknown compile time)
+(GPL source distribution)
+Java Runtime: Java(TM) SE Runtime Environment
+JVM: Java HotSpot(TM) 64-Bit Server VM
+Default Encoding: UTF-8
+Language: en
+Country: US
+--></g></svg>
