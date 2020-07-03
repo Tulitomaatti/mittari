@@ -1,0 +1,85 @@
+@startuml
+
+package snode as "Sensor Node" {
+    component esp32 as "Microcontroller\nWiFi Module" <<ESP-WROOM-32E>> 
+    component ldo as "3.3V LDO\n>500mA"
+    component BME280 as "T/P/RH% Sensor" <<BME280>> 
+    interface "3.3V"
+    interface USB as "USB (5V)"
+    interface VSPI
+    interface HSPI 
+    interface I2C 
+    interface DAC 
+    interface GPIO
+}
+
+package module as "Addon module" {
+    component sipo_sr as "SIPO Shift\nRegister" <<595>>
+    component piso_sr as "PISO Shift\nRegister" <<165>>
+    component id_eeprom as "ID Chip" <<25AA02E64T>>
+    component sensor as "Sensor/Functional ICs" <<ADS1220>> 
+
+    interface measurement as "Measurements"
+    interface module_inputs as "I/O: Inputs"
+    interface module_outputs as "I/O: Outputs"
+}
+
+
+package server as "Server" {
+    component mqtt_broker as "MQTT Broker"
+    interface mqtt as "MQTT"
+
+    component telegraf as "Telegraf\n(data collector)"
+    database db as "InfluxDB"
+    interface influx as "InfluxDB\nLine Protocol"
+
+    component grafana as "Grafana"
+    interface HTTPS 
+}
+
+component pc as "Admin PC"
+
+
+'server -[hidden]- snode
+'snode -[hidden]- module 
+
+telegraf ..> mqtt 
+telegraf ..> influx 
+grafana ..> influx 
+grafana -left- HTTPS 
+ldo -- 3.3V
+ldo ..> USB  
+esp32 ..> 3.3V
+esp32 ..> mqtt
+esp32 -d- VSPI
+esp32 -- HSPI
+esp32 -- I2C 
+esp32 -r- DAC
+esp32 -- GPIO
+BME280 ..> I2C
+BME280 ..> 3.3V
+mqtt_broker - mqtt 
+db -up- influx
+
+piso_sr .. module_inputs
+sipo_sr .. module_outputs
+HSPI <.. sipo_sr
+HSPI <.. piso_sr
+GPIO <.. piso_sr : latches etc. 
+GPIO <.. sipo_sr
+sipo_sr --> sipo_sr
+piso_sr --> piso_sr
+
+
+id_eeprom ..> module_outputs : CS# pin 
+id_eeprom ..> VSPI
+
+sensor ..> VSPI 
+sensor ..> module_outputs
+sensor ..> module_inputs : (optional)
+sensor -d-> measurement
+
+pc .up..> mqtt : <for config etc.> 
+
+
+@enduml
