@@ -61,14 +61,17 @@ BME280 ..> 3.3V
 mqtt_broker - mqtt 
 db -up- influx
 
-piso_sr .. module_inputs
-sipo_sr .. module_outputs
+piso_sr -d- module_inputs
+sipo_sr -d- module_outputs
 HSPI <.. sipo_sr
 HSPI <.. piso_sr
 GPIO <.. piso_sr : latches etc. 
 GPIO <.. sipo_sr
 sipo_sr --> sipo_sr
 piso_sr --> piso_sr
+sipo_sr .u.> 3.3V
+piso_sr -u-> 3.3V
+
 
 
 id_eeprom ..> module_outputs : CS# pin 
@@ -77,7 +80,9 @@ id_eeprom ..> VSPI
 sensor ..> VSPI 
 sensor ..> module_outputs
 sensor ..> module_inputs : (optional)
-sensor -d-> measurement
+sensor -d- measurement
+sensor ..> 3.3V
+sensor ..> USB : (optional)
 
 pc .up..> mqtt : <for config etc.> 
 
