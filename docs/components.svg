@@ -1,9 +1,229 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="120px" preserveAspectRatio="none" style="width:131px;height:120px;" version="1.1" viewBox="0 0 131 120" width="131px" zoomAndPan="magnify"><defs><filter height="300%" id="f1keim8oeuimdl" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="33" x2="33" y1="38.2969" y2="72.2969"/><line style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 5.0,5.0;" x1="92" x2="92" y1="38.2969" y2="72.2969"/><rect fill="#FEFECE" filter="url(#f1keim8oeuimdl)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="47" x="8" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="15" y="22.9951">alice</text><rect fill="#FEFECE" filter="url(#f1keim8oeuimdl)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="47" x="8" y="71.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="15" y="91.292">alice</text><rect fill="#FEFECE" filter="url(#f1keim8oeuimdl)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="43" x="69" y="3"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="76" y="22.9951">bob</text><rect fill="#FEFECE" filter="url(#f1keim8oeuimdl)" height="30.2969" style="stroke: #A80036; stroke-width: 1.5;" width="43" x="69" y="71.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="29" x="76" y="91.292">bob</text><polygon fill="#A80036" points="80.5,50.2969,90.5,54.2969,80.5,58.2969,84.5,54.2969" style="stroke: #A80036; stroke-width: 1.0;"/><line style="stroke: #A80036; stroke-width: 1.0;" x1="33.5" x2="86.5" y1="54.2969" y2="54.2969"/><!--MD5=[88f07481055141aac098e1b0793e3f58]
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="611px" preserveAspectRatio="none" style="width:1319px;height:611px;" version="1.1" viewBox="0 0 1319 611" width="1319px" zoomAndPan="magnify"><defs><filter height="300%" id="fkg2zqufksns8" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[6b92be63a5d978ba79b909e353a1241e]
+cluster snode--><polygon fill="#FFFFFF" filter="url(#fkg2zqufksns8)" points="406,6,512,6,519,28.2969,1003,28.2969,1003,271,406,271,406,6" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="406" x2="519" y1="28.2969" y2="28.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="100" x="410" y="20.9951">Sensor Node</text><!--MD5=[0e004d10fa3aa19825bb85d3d0c3cd6e]
+cluster module--><polygon fill="#FFFFFF" filter="url(#fkg2zqufksns8)" points="556,334,677,334,684,356.2969,1297,356.2969,1297,599,556,599,556,334" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="556" x2="684" y1="356.2969" y2="356.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="115" x="560" y="348.9951">Addon module</text><!--MD5=[4ef80439e1ef409f8f3a0ec422262701]
+cluster server--><polygon fill="#FFFFFF" filter="url(#fkg2zqufksns8)" points="16,14,73,14,80,36.2969,382,36.2969,382,447,16,447,16,14" style="stroke: #000000; stroke-width: 1.5;"/><line style="stroke: #000000; stroke-width: 1.5;" x1="16" x2="80" y1="36.2969" y2="36.2969"/><text fill="#000000" font-family="sans-serif" font-size="14" font-weight="bold" lengthAdjust="spacingAndGlyphs" textLength="51" x="20" y="28.9951">Server</text><!--MD5=[3d15fd212a4bff22fb41b884aeefe184]
+entity esp32--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="78.8906" style="stroke: #A80036; stroke-width: 1.5;" width="179" x="754.5" y="41"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="913.5" y="46"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="911.5" y="48"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="911.5" y="52"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="139" x="769.5" y="73.9951">«ESP-WROOM-32E»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="784" y="90.292">Microcontroller</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="85" x="784" y="106.5889">WiFi Module</text><!--MD5=[d16445b3d1c9b742b25ba91ee8b4b55a]
+entity ldo--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="107" x="422.5" y="49"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="509.5" y="54"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="507.5" y="56"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="507.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="67" x="437.5" y="81.9951">3.3V LDO</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="62" x="437.5" y="98.292">&gt;500mA</text><!--MD5=[3aadc04e3f3d8483012405e9c2c7d4a1]
+entity BME280--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="155" x="564.5" y="49"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="699.5" y="54"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="697.5" y="56"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="697.5" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="76" x="599" y="81.9951">«BME280»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="115" x="579.5" y="98.292">T/P/RH% Sensor</text><!--MD5=[ebed1bb6023e5fff33c1b57e002d36b6]
+entity 3.3V--><ellipse cx="577" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="33" x="560.5" y="255.9951">3.3V</text><!--MD5=[6adf806993c4fed3f755089b7e3c05bf]
+entity USB--><ellipse cx="476" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="445.5" y="255.9951">USB (5V)</text><!--MD5=[aabdf608149766229b92787bae276b8f]
+entity VSPI--><ellipse cx="960" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="944" y="255.9951">VSPI</text><!--MD5=[f7bfc8f1bb495b4b79b1ac728f6ccdbb]
+entity HSPI--><ellipse cx="755" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="32" x="739" y="255.9951">HSPI</text><!--MD5=[f46b679756e6f7fb7c0f8c2b18b8acc8]
+entity I2C--><ellipse cx="666" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="22" x="655" y="255.9951">I2C</text><!--MD5=[1240995e1a5c7946ae238581d45e25f6]
+entity DAC--><ellipse cx="978" cy="80.5" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="31" x="962.5" y="110.4951">DAC</text><!--MD5=[99166ef7b986dc620a0eb0b7893f0066]
+entity GPIO--><ellipse cx="844" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="35" x="826.5" y="255.9951">GPIO</text><!--MD5=[295b473f839cb5c55ed8029cb202a315]
+entity sipo_sr--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="78.8906" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="737" y="369"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="829" y="374"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="827" y="376"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="827" y="380"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45" x="765.5" y="401.9951">«595»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="752" y="418.292">SIPO Shift</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="752" y="434.5889">Register</text><!--MD5=[36f4ae31e0f9a4c7e8e331bcd5f23848]
+entity piso_sr--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="78.8906" style="stroke: #A80036; stroke-width: 1.5;" width="112" x="572" y="369"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="664" y="374"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="662" y="376"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="662" y="380"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="45" x="600.5" y="401.9951">«165»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="72" x="587" y="418.292">PISO Shift</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="61" x="587" y="434.5889">Register</text><!--MD5=[63de781f255ed3850c551fae18a18b0b]
+entity id_eeprom--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="1131" y="377"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="1261" y="382"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="1259" y="384"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="1259" y="388"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="110" x="1146" y="409.9951">«25AA02E64T»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="52" x="1175" y="426.292">ID Chip</text><!--MD5=[88723051146da09166554e42ec8ff111]
+entity sensor--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="193" x="902.5" y="377"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="1075.5" y="382"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="1073.5" y="384"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="1073.5" y="388"/><text fill="#000000" font-family="sans-serif" font-size="14" font-style="italic" lengthAdjust="spacingAndGlyphs" textLength="84" x="952" y="409.9951">«ADS1220»</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="153" x="917.5" y="426.292">Sensor/Functional ICs</text><!--MD5=[5ca2ab491b335de634ab7f4d4ae26c42]
+entity measurement--><ellipse cx="1072" cy="554" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="105" x="1019.5" y="583.9951">Measurements</text><!--MD5=[466c8a635e8dce45e1bffa1bc5afcaed]
+entity module_inputs--><ellipse cx="753" cy="554" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="74" x="716" y="583.9951">I/O: Inputs</text><!--MD5=[ab96cd933246842576d0f7adfa6299a9]
+entity module_outputs--><ellipse cx="926" cy="554" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="87" x="882.5" y="583.9951">I/O: Outputs</text><!--MD5=[42242d2c3343448c1fef8cbb30929277]
+entity mqtt_broker--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="134" x="179" y="203"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="293" y="208"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="291" y="210"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="291" y="214"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="94" x="194" y="235.9951">MQTT Broker</text><!--MD5=[e6d32054fcb97c68952b5c4281bf48c7]
+entity mqtt--><ellipse cx="357" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="41" x="336.5" y="255.9951">MQTT</text><!--MD5=[0d5d088432864f0c134be152b48b80eb]
+entity telegraf--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="62.5938" style="stroke: #A80036; stroke-width: 1.5;" width="150" x="216" y="49"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="346" y="54"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="344" y="56"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="344" y="60"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="231" y="81.9951">Telegraf</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="110" x="231" y="98.292">(data collector)</text><!--MD5=[7468467f3b6b392f1d176d828c753b77]
+entity db--><path d="M49,396 C49,386 89,386 89,386 C89,386 129,386 129,396 L129,421.2969 C129,431.2969 89,431.2969 89,431.2969 C89,431.2969 49,431.2969 49,421.2969 L49,396 " fill="#FEFECE" filter="url(#fkg2zqufksns8)" style="stroke: #000000; stroke-width: 1.5;"/><path d="M49,396 C49,406 89,406 89,406 C89,406 129,406 129,396 " fill="none" style="stroke: #000000; stroke-width: 1.5;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="59" y="422.9951">InfluxDB</text><!--MD5=[b8fb08849632f9ff0fdc2d033176a093]
+entity influx--><ellipse cx="89" cy="226" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="60" x="41.5" y="255.9951">InfluxDB</text><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="95" x="41.5" y="272.292">Line Protocol</text><!--MD5=[97029dda41c7f1332efacff3a5502fd8]
+entity grafana--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="96" x="85" y="57.5"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="161" y="62.5"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="159" y="64.5"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="159" y="68.5"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="56" x="100" y="90.4951">Grafana</text><!--MD5=[d6de0bea540cdcc3f07dc5dde60e897f]
+entity HTTPS--><ellipse cx="41" cy="80.5" fill="#FEFECE" filter="url(#fkg2zqufksns8)" rx="8" ry="8" style="stroke: #A80036; stroke-width: 2.0;"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="46" x="18" y="110.4951">HTTPS</text><!--MD5=[e12fdb32cd01413c3e9353981b686a91]
+entity pc--><rect fill="#FEFECE" filter="url(#fkg2zqufksns8)" height="46.2969" style="stroke: #A80036; stroke-width: 1.5;" width="109" x="302.5" y="531"/><rect fill="#FEFECE" height="10" style="stroke: #A80036; stroke-width: 1.5;" width="15" x="391.5" y="536"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="389.5" y="538"/><rect fill="#FEFECE" height="2" style="stroke: #A80036; stroke-width: 1.5;" width="4" x="389.5" y="542"/><text fill="#000000" font-family="sans-serif" font-size="14" lengthAdjust="spacingAndGlyphs" textLength="69" x="317.5" y="563.9951">Admin PC</text><!--MD5=[c79e61e36d0f3b9dc33be35e67b459af]
+link telegraf to mqtt--><path d="M305.159,112.284 C319.455,143.369 340.848,189.881 351.103,212.179 " fill="none" id="telegraf-&gt;mqtt" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="353.231,216.806,353.1033,206.958,351.1412,212.2637,345.8356,210.3016,353.231,216.806" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[57bd967ff4c239d618c4badc9f6e4811]
+link telegraf to influx--><path d="M247.666,112.284 C201.669,144.96 131.677,194.683 102.502,215.408 " fill="none" id="telegraf-&gt;influx" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="98.1806,218.478,107.8341,216.5262,102.2566,215.5821,103.2007,210.0046,98.1806,218.478" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c042fde213c17a30b80b8149678d0731]
+link grafana to influx--><path d="M126.221,103.607 C116.943,133.867 100.58,187.232 93.0276,211.864 " fill="none" id="grafana-&gt;influx" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="91.4721,216.938,97.9347,209.506,92.9378,212.1577,90.2861,207.1608,91.4721,216.938" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[50c77089c589a91ec8a711cd0881c863]
+link HTTPS to grafana--><path d="M50.3438,80.5 C61.8597,80.5 73.3756,80.5 84.8915,80.5 " fill="none" id="HTTPS-grafana" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[b2081822afcb018b6b82422c54945994]
+link ldo to 3.3V--><path d="M497.667,112.284 C521.2,145.72 557.296,197.004 571.233,216.806 " fill="none" id="ldo-3.3V" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[345fe6ea5a2c53430aa8b58948c78bfa]
+link ldo to USB--><path d="M476,112.284 C476,143.108 476,189.1 476,211.612 " fill="none" id="ldo-&gt;USB" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="476,216.806,480,207.806,476,211.806,472,207.806,476,216.806" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[48045da62d98a3177d12ece3a1cce521]
+link esp32 to 3.3V--><path d="M754.242,117.636 C702.843,139.086 644.097,165.113 621,181 C607.76,190.107 595.051,203.486 586.726,213.098 " fill="none" id="esp32-&gt;3.3V" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="583.438,216.963,592.3164,212.6998,586.6778,213.1546,586.223,207.5161,583.438,216.963" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[45380c566abade9089cd317e85bd2b66]
+link esp32 to mqtt--><path d="M754.432,114.927 C748.565,116.744 742.718,118.456 737,120 C592.587,159.008 540.24,114.998 406,181 C390.421,188.66 376.084,202.713 366.997,212.88 " fill="none" id="esp32-&gt;mqtt" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="363.665,216.7,372.5962,212.5486,366.9524,212.9326,366.5683,207.2888,363.665,216.7" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[526db56c82af37a2bea985ede5c673dc]
+link esp32 to VSPI--><path d="M875.391,120.333 C902.23,153.535 938.774,198.742 953.478,216.932 " fill="none" id="esp32-VSPI" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3deab21d6a581d6968da7c7aea882ce1]
+link esp32 to HSPI--><path d="M819.915,120.333 C799.323,153.535 771.285,198.742 760.004,216.932 " fill="none" id="esp32-HSPI" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[3f78c60150529f64063af360f95ff990]
+link esp32 to I2C--><path d="M788.151,120.165 C763.544,137.906 734.677,159.701 710,181 C696.424,192.717 681.954,207.739 673.457,216.854 " fill="none" id="esp32-I2C" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[280ed3b6420dc2f18c4b4c94ff6f3872]
+link esp32 to DAC--><path d="M933.508,80.5 C945.326,80.5 957.144,80.5 968.963,80.5 " fill="none" id="esp32-DAC" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[6e4f9c723936202f83a0db83889afbbd]
+link esp32 to GPIO--><path d="M844,120.333 C844,153.535 844,198.742 844,216.932 " fill="none" id="esp32-GPIO" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[278e79d49732905aef13c02b944003ee]
+link BME280 to I2C--><path d="M647.149,112.284 C652.304,143.108 659.996,189.1 663.761,211.612 " fill="none" id="BME280-&gt;I2C" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="664.63,216.806,667.0915,207.2697,663.8057,211.8744,659.201,208.5886,664.63,216.806" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[9b52548b4e44d9bcac1957eb4bdc0fff]
+link BME280 to 3.3V--><path d="M628.056,112.284 C613.976,143.369 592.908,189.881 582.807,212.179 " fill="none" id="BME280-&gt;3.3V" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="580.712,216.806,588.0707,210.2601,582.7762,212.252,580.7843,206.9574,580.712,216.806" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e1a0c3e484a8a2ace0881b3277223f98]
+link mqtt_broker to mqtt--><path d="M313.207,226 C324.725,226 336.244,226 347.762,226 " fill="none" id="mqtt_broker-mqtt" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[a23daa79c3635e2bc44fe220f542bc88]
+link influx to db--><path d="M89,235.225 C89,261.777 89,345.807 89,385.861 " fill="none" id="influx-db" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[77281371cbe17212660399f681755920]
+link piso_sr to module_inputs--><path d="M661.827,448.333 C690.748,481.535 730.128,526.7425 745.972,544.932 " fill="none" id="piso_sr-module_inputs" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[122ed323326c1f4181d4d1449d225cd1]
+link sipo_sr to module_outputs--><path d="M808.328,448.297 C815.741,463.941 825.722,481.452 838,495 C861.715,521.1673 899.689,540.845 916.943,548.9453 " fill="none" id="sipo_sr-module_outputs" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><!--MD5=[f2ed3e50683a43c0e0370932f1580cac]
+reverse link HSPI to sipo_sr--><path d="M750.127,240.212 C744.237,258.095 735.94,290.888 743,318 C747.62,335.741 756.616,353.694 765.719,368.817 " fill="none" id="HSPI&lt;-sipo_sr" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="751.859,235.163,745.1567,242.3796,750.2376,239.8928,752.7244,244.9738,751.859,235.163" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[0881381e9b0982e9a1525cf380be9d01]
+reverse link HSPI to piso_sr--><path d="M746.27,239.408 C727.806,265.65 684.136,327.716 655.342,368.64 " fill="none" id="HSPI&lt;-piso_sr" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="749.213,235.225,740.7623,240.2833,746.3355,239.314,747.3048,244.8872,749.213,235.225" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[e919681ba140d8536dcc86cca8ecedbd]
+reverse link GPIO to piso_sr--><path d="M835.215,239.285 C826.783,250.514 813.256,267.131 799,279 C767.309,305.386 752.302,301.679 719,326 C701.359,338.883 683.182,354.593 667.757,368.769 " fill="none" id="GPIO&lt;-piso_sr" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="838.294,235.122,829.7277,239.9818,835.322,239.1428,836.161,244.7371,838.294,235.122" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="74" x="765" y="314.0669">latches etc.</text><!--MD5=[7f2690f677423a4b5ddb2026b8d9c4f7]
+reverse link GPIO to sipo_sr--><path d="M849.284,240.33 C855.639,258.347 864.458,291.291 856,318 C850.206,336.296 839.178,354.087 827.947,368.923 " fill="none" id="GPIO&lt;-sipo_sr" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="847.413,235.241,846.765,245.0685,849.1387,239.9338,854.2734,242.3074,847.413,235.241" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[af0093a4aec23b0720f689f0477a17cc]
+link sipo_sr to sipo_sr--><path d="M849.43,393.876 C868.595,393.799 884,398.674 884,408.5 C884,417.405 871.348,422.243 854.712,423.015 " fill="none" id="sipo_sr-&gt;sipo_sr" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="849.43,423.124,858.5104,426.9381,854.4289,423.0212,858.3458,418.9397,849.43,423.124" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[46e968cde3143f33ebf77cb2e9a5392e]
+link piso_sr to piso_sr--><path d="M684.43,393.876 C703.595,393.799 719,398.674 719,408.5 C719,417.405 706.348,422.243 689.712,423.015 " fill="none" id="piso_sr-&gt;piso_sr" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="684.43,423.124,693.5104,426.9381,689.4289,423.0212,693.3458,418.9397,684.43,423.124" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[796eeac39735c71ce801715c988e0d90]
+link id_eeprom to module_outputs--><path d="M1146.28,440.108 C1079.87,474.14 977.08,526.8216 939.964,545.8435 " fill="none" id="id_eeprom-&gt;module_outputs" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="935.371,548.1973,945.2048,547.6531,939.8209,545.9172,941.5567,540.5333,935.371,548.1973" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="51" x="1067" y="491.0669">CS# pin</text><!--MD5=[2355b1c068e2f392642548d30aa129ba]
+link id_eeprom to VSPI--><path d="M1173.41,376.863 C1156,361.037 1133.9,341.787 1113,326 C1063.84,288.864 1000.94,250.94 973.647,234.916 " fill="none" id="id_eeprom-&gt;VSPI" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="969.278,232.359,975.026,240.3565,973.5936,234.884,979.0661,233.4516,969.278,232.359" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[c91d9c47721cc02b37e630482fb73ec0]
+link sensor to VSPI--><path d="M992.371,376.82 C983.759,336.961 969.094,269.089 962.899,240.417 " fill="none" id="sensor-&gt;VSPI" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="961.777,235.225,959.7702,244.8672,962.8341,240.112,967.5894,243.1759,961.777,235.225" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[ef628802d36093023f925f048da8f91e]
+link sensor to module_outputs--><path d="M983.34,440.284 C967.527,471.369 943.866,517.8807 932.522,540.1794 " fill="none" id="sensor-&gt;module_outputs" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="930.168,544.8061,937.8144,538.5987,932.4354,540.3498,930.6844,534.9708,930.168,544.8061" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[faceb3de2b182e610c5e2915121571d1]
+link sensor to module_inputs--><path d="M946.529,440.108 C888.965,473.687 800.274,525.4232 766.6,545.0666 " fill="none" id="sensor-&gt;module_inputs" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="762.041,547.7259,771.8304,546.645,766.3596,545.206,767.7986,539.7353,762.041,547.7259" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="61" x="877" y="491.0669">(optional)</text><!--MD5=[2ced413ee437ea2e5b47f8dac25b1fec]
+link sensor to measurement--><path d="M1014.66,440.284 C1030.47,471.369 1054.13,517.8807 1065.48,540.1794 " fill="none" id="sensor-&gt;measurement" style="stroke: #A80036; stroke-width: 1.0;"/><polygon fill="#A80036" points="1067.83,544.8061,1067.3149,534.9707,1065.5631,540.3495,1060.1844,538.5977,1067.83,544.8061" style="stroke: #A80036; stroke-width: 1.0;"/><!--MD5=[05f837244fd78870e11057dac7b42b0d]
+reverse link mqtt to pc--><path d="M357,240.262 C357,290.304 357,468.015 357,530.817 " fill="none" id="mqtt&lt;-pc" style="stroke: #A80036; stroke-width: 1.0; stroke-dasharray: 7.0,7.0;"/><polygon fill="#A80036" points="357,235.058,353,244.058,357,240.058,361,244.058,357,235.058" style="stroke: #A80036; stroke-width: 1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacingAndGlyphs" textLength="109" x="358" y="413.0669">&lt;for config etc.&gt;</text><!--MD5=[22fcdd184054691b858f3bcbdd00f61b]
 @startuml
-alice -> bob
+package snode as "Sensor Node" {
+    component esp32 as "Microcontroller\nWiFi Module" <<ESP-WROOM-32E>> 
+    component ldo as "3.3V LDO\n>500mA"
+    component BME280 as "T/P/RH% Sensor" <<BME280>> 
+    interface "3.3V"
+    interface USB as "USB (5V)"
+    interface VSPI
+    interface HSPI 
+    interface I2C 
+    interface DAC 
+    interface GPIO
+}
+
+package module as "Addon module" {
+    component sipo_sr as "SIPO Shift\nRegister" <<595>>
+    component piso_sr as "PISO Shift\nRegister" <<165>>
+    component id_eeprom as "ID Chip" <<25AA02E64T>>
+    component sensor as "Sensor/Functional ICs" <<ADS1220>> 
+
+    interface measurement as "Measurements"
+    interface module_inputs as "I/O: Inputs"
+    interface module_outputs as "I/O: Outputs"
+}
+
+
+package server as "Server" {
+    component mqtt_broker as "MQTT Broker"
+    interface mqtt as "MQTT"
+
+    component telegraf as "Telegraf\n(data collector)"
+    database db as "InfluxDB"
+    interface influx as "InfluxDB\nLine Protocol"
+
+    component grafana as "Grafana"
+    interface HTTPS 
+}
+
+component pc as "Admin PC"
+
+
+'server -[hidden]- snode
+'snode -[hidden]- module 
+
+telegraf ..> mqtt 
+telegraf ..> influx 
+grafana ..> influx 
+grafana -left- HTTPS 
+ldo - - 3.3V
+ldo ..> USB  
+esp32 ..> 3.3V
+esp32 ..> mqtt
+esp32 -d- VSPI
+esp32 - - HSPI
+esp32 - - I2C 
+esp32 -r- DAC
+esp32 - - GPIO
+BME280 ..> I2C
+BME280 ..> 3.3V
+mqtt_broker - mqtt 
+db -up- influx
+
+piso_sr .. module_inputs
+sipo_sr .. module_outputs
+HSPI <.. sipo_sr
+HSPI <.. piso_sr
+GPIO <.. piso_sr : latches etc. 
+GPIO <.. sipo_sr
+sipo_sr - -> sipo_sr
+piso_sr - -> piso_sr
+
+
+id_eeprom ..> module_outputs : CS# pin 
+id_eeprom ..> VSPI
+
+sensor ..> VSPI 
+sensor ..> module_outputs
+sensor ..> module_inputs : (optional)
+sensor -d-> measurement
+
+pc .up..> mqtt : <for config etc.>
 @enduml
 
-PlantUML version 1.2020.16beta1(Unknown compile time)
+@startuml
+package snode as "Sensor Node" {
+    component esp32 as "Microcontroller\nWiFi Module" <<ESP-WROOM-32E>> 
+    component ldo as "3.3V LDO\n>500mA"
+    component BME280 as "T/P/RH% Sensor" <<BME280>> 
+    interface "3.3V"
+    interface USB as "USB (5V)"
+    interface VSPI
+    interface HSPI 
+    interface I2C 
+    interface DAC 
+    interface GPIO
+}
+
+package module as "Addon module" {
+    component sipo_sr as "SIPO Shift\nRegister" <<595>>
+    component piso_sr as "PISO Shift\nRegister" <<165>>
+    component id_eeprom as "ID Chip" <<25AA02E64T>>
+    component sensor as "Sensor/Functional ICs" <<ADS1220>> 
+
+    interface measurement as "Measurements"
+    interface module_inputs as "I/O: Inputs"
+    interface module_outputs as "I/O: Outputs"
+}
+
+
+package server as "Server" {
+    component mqtt_broker as "MQTT Broker"
+    interface mqtt as "MQTT"
+
+    component telegraf as "Telegraf\n(data collector)"
+    database db as "InfluxDB"
+    interface influx as "InfluxDB\nLine Protocol"
+
+    component grafana as "Grafana"
+    interface HTTPS 
+}
+
+component pc as "Admin PC"
+
+
+
+telegraf ..> mqtt 
+telegraf ..> influx 
+grafana ..> influx 
+grafana -left- HTTPS 
+ldo - - 3.3V
+ldo ..> USB  
+esp32 ..> 3.3V
+esp32 ..> mqtt
+esp32 -d- VSPI
+esp32 - - HSPI
+esp32 - - I2C 
+esp32 -r- DAC
+esp32 - - GPIO
+BME280 ..> I2C
+BME280 ..> 3.3V
+mqtt_broker - mqtt 
+db -up- influx
+
+piso_sr .. module_inputs
+sipo_sr .. module_outputs
+HSPI <.. sipo_sr
+HSPI <.. piso_sr
+GPIO <.. piso_sr : latches etc. 
+GPIO <.. sipo_sr
+sipo_sr - -> sipo_sr
+piso_sr - -> piso_sr
+
+
+id_eeprom ..> module_outputs : CS# pin 
+id_eeprom ..> VSPI
+
+sensor ..> VSPI 
+sensor ..> module_outputs
+sensor ..> module_inputs : (optional)
+sensor -d-> measurement
+
+pc .up..> mqtt : <for config etc.>
+@enduml
+
+PlantUML version 1.2020.16beta3(Unknown compile time)
 (GPL source distribution)
 Java Runtime: Java(TM) SE Runtime Environment
 JVM: Java HotSpot(TM) 64-Bit Server VM
