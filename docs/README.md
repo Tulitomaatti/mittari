@@ -5,5 +5,5 @@ Lumping all planning in one document, until there is enough stuff to justify spl
 
 ### Usecase diagram
 
-![Usecase diagram](http://www.plantuml.com/plantuml/proxy?cache=no&src=https://raw.githubusercontent.com/Tulitomaatti/mittari/master/docs/usecases.puml)
+![Usecase diagram](usecases.svg)
 
