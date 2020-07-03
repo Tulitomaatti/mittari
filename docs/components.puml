@@ -4,13 +4,13 @@ package snode as "Sensor Node" {
     component esp32 as "Microcontroller\nWiFi Module" <<ESP-WROOM-32E>> 
     component ldo as "3.3V LDO\n>500mA"
     component BME280 as "T/P/RH% Sensor" <<BME280>> 
-    interface "3.3V"
+ '   interface "3.3V"
     interface USB as "USB (5V)"
     interface VSPI
     interface HSPI 
     interface I2C 
     interface DAC 
-    interface GPIO
+    interface GPIO 
 }
 
 package module as "Addon module" {
@@ -47,9 +47,9 @@ telegraf ..> mqtt
 telegraf ..> influx 
 grafana ..> influx 
 grafana -left- HTTPS 
-ldo -- 3.3V
-ldo ..> USB  
-esp32 ..> 3.3V
+'ldo -- 3.3V
+ldo .d.> USB  
+'esp32 ..> 3.3V
 esp32 ..> mqtt
 esp32 -d- VSPI
 esp32 -- HSPI
@@ -57,7 +57,7 @@ esp32 -- I2C
 esp32 -r- DAC
 esp32 -- GPIO
 BME280 ..> I2C
-BME280 ..> 3.3V
+'BME280 ..> 3.3V
 mqtt_broker - mqtt 
 db -up- influx
 
@@ -65,12 +65,12 @@ piso_sr -d- module_inputs
 sipo_sr -d- module_outputs
 HSPI <.. sipo_sr
 HSPI <.. piso_sr
-GPIO <.. piso_sr : latches etc. 
+GPIO <.. piso_sr  
 GPIO <.. sipo_sr
 sipo_sr --> sipo_sr
 piso_sr --> piso_sr
-sipo_sr .u.> 3.3V
-piso_sr -u-> 3.3V
+'sipo_sr .u.> 3.3V
+'piso_sr -u-> 3.3V
 
 
 
@@ -81,10 +81,20 @@ sensor ..> VSPI
 sensor ..> module_outputs
 sensor ..> module_inputs : (optional)
 sensor -d- measurement
-sensor ..> 3.3V
-sensor ..> USB : (optional)
+sensor .u.> I2C
+'sensor ..> 3.3V
+'sensor ..> USB : (optional)
 
 pc .up..> mqtt : <for config etc.> 
 
+'Tuning 
+'GPIO -[hidden]-> HSPI
+piso_sr <-[hidden] sensor
+
+DAC <-[hidden] ldo
+BME280 <-[hidden] ldo
+I2C <-[hidden] GPIO
+'esp32 -[hidden]-> BME280
+'BME280 -[hidden]> ldo
 
 @enduml
